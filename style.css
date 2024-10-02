@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #0f1111;
+}
+
+@media screen and (min-width: 390px) {
+    .header-start-info {
+        background-image: url(assets/header/background.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #464646;
+        height: 100vh;
+        padding: 20px 16px 50px ;
+    }
+}
