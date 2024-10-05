@@ -1,68 +1,78 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-body {
-    background-color: #fff;
-    color: #0f1111;
-    overflow: hidden;
-    height: 1080px;
-    width: 1920px;
+body{
+    min-height: 100vh;
+    background-image: url("back.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
-    .header-start-info {
-        background-image: url('./assets/header/background.svg');
-        height: 100vh;
-        padding: 0 370px;
-        width: 100%;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 80px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav a:hover{
+    background-color: rgba(70, 70, 70, 0.21);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #1A3E3E;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media (max-width: 800px){
+    .hideOnMobile{
+        display: none;
     }
-
-    .header-container{
-        display: flex;
-        padding-top: 16px;
-        align-items: center;
+    .menu-button{
+        display: block;
     }
-
-    .header-logo{
-        margin-right: 200px;
+}
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%
     }
-
-    ul.navbar-list{
-        display: flex;
-    }
-
-    .navbar-list-container ul li{
-        padding: 14px 12px;
-        list-style-type: none;
-
-    }
-
-    .navbar-list-container ul li a{
-        text-decoration: none;
-        color: #ffffff;
-        font-family: "Nunito Sans", sans-serif;
-        font-size: 18px;
-    }
-
-    .consult-container{
-        height: 100%;
-        margin-left: 49px;
-    }
-    .consult-container button{
-        height: 100%;
-        width: 100%;
-        padding: 12px 24px;
-        background-color: #1A3E3E;
-        border: none;
-        color: #ffffff;
-        font-family: "Nunito Sans", sans-serif;
-        font-size: 16px;
-
-
-    }
-
-
-
-
+}
