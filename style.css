@@ -505,6 +505,47 @@ label {
 #pinterest-button:hover {
     background-color: #f2be22; /* Цвет фона при наведении */
 }
+
+.footer {
+    display: flex;
+    flex-direction: column; /* Размещаем контейнеры один под другим */
+    width: 100%;
+    max-height: 587px; /* Можно настроить высоту */
+}
+
+.footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.footer-container.top {
+    background-color: #1A3E3E; /* Цвет для верхнего контейнера */
+    padding: 178px 370px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container.bottom {
+    background-color: #18121E; /* Цвет для нижнего контейнера */
+    font-family: 'Nunito Sans SemiBold', sans-serif;
+    font-size: 14px;
+    padding: 24px 370px;
+}
+
+.footer-container.bottom  span a {
+    color:#ffffff;
+    text-decoration: underline;
+}
+
+.footer-container.top h1{
+    font-size: 20px;
+    padding: 17px 0;
+}
+
+
 @media (max-width: 1060px) {
     .links-container {
         flex-direction: column;
