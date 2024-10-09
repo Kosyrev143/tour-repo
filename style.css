@@ -3,7 +3,7 @@
     font-family: 'NEXT ART Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('NEXT ART Bold'), url('NEXT ART_Bold.woff') format('woff');
+    src: local('NEXT ART Bold'), url('fonts/NEXT ART_Bold.woff') format('woff');
 }
 
 :root {
@@ -30,7 +30,7 @@ body {
 
 .main-section {
     min-height: 100vh;
-    background-image: url("back.svg");
+    background-image: url("assets/back.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -357,15 +357,15 @@ label {
 }
 
 #card-1 {
-    background-image: url('popular-direction-back-1.svg');
+    background-image: url('assets/popular-direction-back-1.svg');
 }
 
 #card-2 {
-    background-image: url('popular-direction-back-1.svg'); /* Укажите путь к изображению */
+    background-image: url('assets/popular-direction-back-1.svg'); /* Укажите путь к изображению */
 }
 
 #card-3 {
-    background-image: url('popular-direction-back-1.svg'); /* Укажите путь к изображению */
+    background-image: url('assets/popular-direction-back-1.svg'); /* Укажите путь к изображению */
 }
 
 #popular-directions-button {
@@ -511,6 +511,9 @@ label {
     flex-direction: column; /* Размещаем контейнеры один под другим */
     width: 100%;
     max-height: 587px; /* Можно настроить высоту */
+
+}
+body{
 }
 
 .footer-container {
@@ -544,7 +547,61 @@ label {
     font-size: 20px;
     padding: 17px 0;
 }
+footer .container{
+    padding: 178px 370px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+    height: 263px;
+    background-color: #1A3E3E;
 
+}
+
+.mini-container {
+    width: 30%;
+    padding: 10px;
+}
+
+.mini-container h1 {
+    font-size: 1.5em;
+}
+
+.mini-container p {
+    margin: 10px 0;
+}
+
+.contacts {
+    margin: 10px 0;
+}
+
+.social-network img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.services-list,
+.important-list {
+    list-style-type: none;
+}
+
+.service-item,
+.important-item {
+    margin: 5px 0;
+}
+
+.service-item a,
+.important-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.service-item a:hover,
+.important-item a:hover {
+    text-decoration: underline;
+    color: #F2BE22;
+}
 
 @media (max-width: 1060px) {
     .links-container {
